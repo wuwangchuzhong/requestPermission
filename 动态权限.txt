@@ -1,0 +1,12 @@
+  private void requestLivePermission() {
+        MPermission.with(LotAuctionPhotoView.this)
+                .addRequestCode(LIVE_PERMISSION_REQUEST_CODE)
+                .permissions(LIVE_PERMISSIONS)
+                .request();
+    }
+
+// È¨ÏÞ¿ØÖÆ
+    private static final String[] LIVE_PERMISSIONS = new String[]{
+            Manifest.permission.CAMERA,
+            Manifest.permission.WRITE_EXTERNAL_STORAGE,
+            };
